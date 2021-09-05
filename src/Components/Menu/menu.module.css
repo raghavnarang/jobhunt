@@ -1,0 +1,104 @@
+.menuWrapper {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  color: #fff;
+  width: 100%;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.logo span {
+  margin-left: 5px;
+}
+
+.logo svg {
+  margin-top: -2px;
+}
+
+.menuWrapper nav {
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.menuWrapper nav a:first-child {
+  margin-left: 0;
+}
+
+.menuWrapper nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 30px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.menuWrapper nav a.active {
+  font-weight: 600;
+  position: relative;
+}
+
+.menuWrapper nav a.active::after {
+  content: '';
+  width: 34px;
+  height: 3px;
+  background-color: #fff;
+  position: absolute;
+  left: 25%;
+  bottom: -12px;
+}
+
+.mobileMenuButton {
+  display: none;
+}
+
+@media (max-width: 425px) {
+  .menuWrapper {
+    justify-content: space-between;
+  }
+
+  .menuWrapper nav.show {
+    display: block;
+  }
+
+  .menuWrapper nav {
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    z-index: 9999;
+    left: 0;
+    right: 0;
+    background-color: #80c6ff;
+    border-top: 1px solid #fff;
+    display: none;
+  }
+
+  .leftMenu, .rightMenu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobileMenuButton {
+    display: block;
+  }
+
+  .menuWrapper nav a {
+    margin: 0;
+    padding: 20px;
+    position: relative;
+    border-bottom: 1px solid #000;
+  }
+
+  .menuWrapper nav .rightMenu a:last-child {
+    border-bottom: 0;
+  }
+}

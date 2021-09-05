@@ -1,0 +1,46 @@
+.search {
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 20px 22px;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0 7px 6px 1px #ccc;
+}
+
+.searchInput,
+.searchSelect {
+  position: relative;
+  flex: 1 1 0;
+  margin-right: 30px;
+}
+
+.searchInput input,
+.searchSelect select {
+  height: 60px;
+  padding: 0 20px 0 60px;
+  font-size: 16px;
+  border: 0;
+  outline: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.searchInput svg,
+.searchSelect svg {
+  width: 30px;
+  height: 30px;
+  top: 16px;
+  left: 14px;
+  position: absolute;
+}
+
+.button {
+  font-weight: 600;
+  font-size: 24px;
+  background: #f07987;
+  border-radius: 8px;
+  border: 0;
+  color: #fff;
+  flex: 0.8 1 0;
+  cursor: pointer;
+}

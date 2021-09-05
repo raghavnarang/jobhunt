@@ -1,0 +1,41 @@
+.hero {
+  color: #333;
+  position: relative;
+}
+
+.heroWrapper {
+  position: relative;
+}
+
+.heroBack {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 50px;
+  background-image: linear-gradient(274.83deg, #5db0df 0.58%, #5d7adf 74.3%);
+}
+
+.heroContent {
+  margin: 78px 0;
+  color: #fff;
+}
+
+.heroContent h1 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 48px;
+  color: #fff;
+}
+
+.heroContent p {
+  font-size: 20px;
+  margin: 0;
+}
+
+@media (max-width: 425px) {
+  .hero {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+}
