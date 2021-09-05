@@ -33,9 +33,22 @@
   margin: 0;
 }
 
-@media (max-width: 425px) {
-  .hero {
-    padding-top: 40px;
-    padding-bottom: 50px;
+@media screen and (max-width: 768px) {
+  .heroContent {
+    margin: 78px 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .heroContent {
+    margin: 78px 30px;
+  }
+
+  .heroContent h1 {
+    font-size: 30px;
+  }
+
+  .heroContent p {
+    font-size: 15px;
   }
 }

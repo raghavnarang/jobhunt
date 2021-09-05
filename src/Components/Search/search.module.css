@@ -44,3 +44,27 @@
   flex: 0.8 1 0;
   cursor: pointer;
 }
+
+@media screen and (max-width: 768px) {
+  .search {
+    flex-direction: column;
+  }
+
+  .searchInput,
+  .searchSelect,
+  .button {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+
+  .button {
+    padding: 15px 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .search {
+    margin: 0 30px;
+    padding: 10px 15px;
+  }
+}

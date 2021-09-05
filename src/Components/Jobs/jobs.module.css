@@ -31,7 +31,7 @@
 }
 
 .jobContent {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 .job h2 {
@@ -50,17 +50,52 @@
 }
 
 .job footer {
-    margin-top: 20px;
-    text-align: right;
+  margin-top: 20px;
+  text-align: right;
 }
 
 .job footer button {
-    border: 2px solid #F07987;
-    border-radius: 8px;
-    font-weight: 600;
-    font-size: 14px;
-    color: #F07987;
-    background-color: transparent;
-    padding: 10px 17px;
-    cursor: pointer;
+  border: 2px solid #f07987;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #f07987;
+  background-color: transparent;
+  padding: 10px 17px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+  .job:nth-child(odd) {
+    margin-right: 0;
+  }
+
+  .jobBoard {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .jobBoard {
+    padding: 0 30px;
+  }
+
+  .job figure {
+    display: block;
+    margin: 0 auto 20px;
+  }
+
+  .job {
+    flex-direction: column;
+    text-align: center;
+    flex: 1 1 100%;
+  }
+
+  .job footer {
+    text-align: center;
+  }
+
+  .jobContent {
+    margin-left: 0;
+  }
 }

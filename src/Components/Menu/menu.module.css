@@ -61,9 +61,12 @@
   display: none;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
   .menuWrapper {
     justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: auto;
   }
 
   .menuWrapper nav.show {
@@ -80,6 +83,7 @@
     background-color: #80c6ff;
     border-top: 1px solid #fff;
     display: none;
+    top: 70px;
   }
 
   .leftMenu, .rightMenu {
@@ -89,16 +93,21 @@
 
   .mobileMenuButton {
     display: block;
+    margin-top: 6px;
   }
 
   .menuWrapper nav a {
     margin: 0;
     padding: 20px;
     position: relative;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #fff;
   }
 
   .menuWrapper nav .rightMenu a:last-child {
     border-bottom: 0;
+  }
+
+  .menuWrapper nav a.active::after {
+    display: none;
   }
 }
