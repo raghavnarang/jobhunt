@@ -1,4 +1,5 @@
 import style from './jobs.module.css';
+import React from 'react';
 
 const Job: React.FC = () => {
     return <article className={style.job}>
